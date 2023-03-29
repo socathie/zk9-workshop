@@ -1,0 +1,26 @@
+{
+  "name": "zk9-workshop",
+  "version": "1.0.0",
+  "description": "circom environment for ZKML workshop @ zkSummit9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socathie/zk9-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/socathie/zk9-workshop/issues"
+  },
+  "homepage": "https://github.com/socathie/zk9-workshop#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "circom_tester": "^0.0.19",
+    "circomlib-ml": "^1.4.4",
+    "mocha": "^10.2.0"
+  }
+}
