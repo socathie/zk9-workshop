@@ -135,5 +135,3 @@ for (var i0 = 0; i0 < 10; i0++) {
 out[0] <== dense_softmax.out;
 
 }
-
-component main = Model();
