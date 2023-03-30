@@ -1,4 +1,4 @@
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+# curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 git clone https://github.com/iden3/circom.git
 
