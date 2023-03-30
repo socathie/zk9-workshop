@@ -15,24 +15,29 @@ template Main() {
     signal output shared_key;
     signal output out[1001];
 
-    component hasher = hash1000();
-    component enc = encrypt1000();
+    // TODO: initialize components for hashing and encryption
+    // component hasher = ...
+    // component enc = ...
 
-    enc.public_key[0] <== public_key[0];
-    enc.public_key[1] <== public_key[1];
-    enc.private_key <== private_key;
+    // TODO: feed public and private keys into encryption component
+    // enc.public_key[0] <== ...
+    // enc.public_key[1] <== ...
+    // enc.private_key <== ...
 
     for (var i = 0; i < 1000; i++) {
-        hasher.in[i] <== in[i];
-        enc.in[i] <== in[i];
+        // TODO: feed inputs into hasher and encryption components
+        // hasher.in[i] <== ...
+        // enc.in[i] <== ...
     }
 
-    hash <== hasher.out;
-    shared_key <== enc.shared_key;
+    // TODO: connect outputs
+    // hash <== ...
+    // shared_key <== ...
 
     for (var i = 0; i < 1001; i++) {
         out[i] <== enc.out[i];
     }
 }
 
-component main { public [ public_key ] } = Main();
+// TODO: make public key a public input
+// component main { public [ ... ] } = Main();

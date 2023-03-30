@@ -20,32 +20,31 @@ template Main() {
 
     // outputs
     signal output out;
-    signal output cids[2];
+    // TODO: add output signals for cid
+    // signal output ...
     signal output hash;
 
-    // recurring components
-    component pixel;
-    component model;
-    component cid;
+    component model = Model();
 
-    model = Model();
-    pixel = getPixels();
-    cid = getCid();
+    // TODO: add components for getting cid and pixels from input bytes
+    // component pixel = ...
+    // component cid = ...
 
     for (var i = 0; i < 797*8; i++) {
-        pixel.in[i] <== in[i];
-        cid.in[i] <== in[i];
+        // TODO: fill inputs into components
+        // pixel.in[i] <== ...
+        // cid.in[i] <== ...
     }
 
-    // get cid
     for (var i = 0; i < 2; i++) {
-        cids[i] <== cid.out[i];
+        // TODO: get outputs from cid component
     }
 
     for (var i0 = 0; i0 < 28; i0++) {
         for (var i1 = 0; i1 < 28; i1++) {
             for (var i2 = 0; i2 < 1; i2++) {
-                model.in[i0][i1][i2] <== pixel.out[i0][i1][i2];
+                // TODO: get outputs from pixels component and fill into model
+                // model.in[i0][i1][i2] <== ...
     }}}
 
     for (var i0 = 0; i0 < 3; i0++) {
